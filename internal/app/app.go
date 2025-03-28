@@ -13,7 +13,7 @@ func init() {
 }
 
 func Run() {
-	port := 8247
+	port := 8080
 	s := server.New(fmt.Sprintf(":%d", port))
 	log.Println("Server starting on port", port)
 	err := s.Run()
