@@ -30,7 +30,7 @@ func (s *Server) Run() error {
 		User:     "zoob",
 		Password: "1111",
 		Name:     "todo",
-		Host:     "localhost:9000",
+		Host:     "db:5432",
 	}
 	db.Connect(todoDBCredentials)
 
