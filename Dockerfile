@@ -17,4 +17,4 @@ RUN apk add --no-cache libc6-compat
 
 EXPOSE 8080
 
-CMD ["/app/main"]
+CMD ["sh", "-c", "sleep 5 && /app/main"]
