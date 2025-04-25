@@ -44,6 +44,7 @@ func (s *Server) Run() error {
 	router.HandleFunc("GET /list/{id}", handler.ReadFromList())
 	router.HandleFunc("PUT /list/{id}", handler.UpdateListItem())
 	router.HandleFunc("DELETE /list/{id}", handler.DeleteListItem())
+	router.HandleFunc("GET /inspect", handler.Inspect())
 
 	return http.ListenAndServe(s.addr, withCORS(router))
 }
